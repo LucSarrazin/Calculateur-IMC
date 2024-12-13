@@ -16,15 +16,19 @@ function CalculerIMC(){
 		}
 		
 		else if(IMC >= 16.0 && IMC <= 18.9) {
-			typeText.innerText = "mince"
+			typeText.innerText = "maigre"
             imcText.innerText = IMC;
+		}
+			
+		else if(IMC >= 19.0 && IMC <= 20.9){
+			typeText.innerText = "mince ";
+                        imcText.innerText = IMC;
 		}
 		
 		else if(IMC >= 21.0 && IMC <= 24.9) {
 			typeText.innerText = "normal";
             imcText.innerText = IMC;
 		}
-		
 		else if(IMC >= 25.0 && IMC <= 29.9) {
 			typeText.innerText = "surpoids";
             imcText.innerText = IMC;
